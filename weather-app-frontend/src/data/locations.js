@@ -4,7 +4,7 @@ export const locations = {
   Kalutara: ["Kalutara", "Horana", "Panadura", "Wadduwa"],
   Kandy: ["Kandy", "Peradeniya", "Gampola", "Katugastota", "Matale", "Dambulla", "Nuwara Eliya"],
   Matale: ["Matale", "Dambulla", "Nuwara Eliya"],
-  NuwaraEliya: ["Nuwara Eliya", "Hatton‑Dickoya", "Talawakele‑Lindula", "Nawalapitiya"],
+  NuwaraEliya: ["Nuwara Eliya", "Nawalapitiya"],
   Galle: ["Galle", "Ambalangoda", "Hikkaduwa"],
   Matara: ["Matara", "Weligama", "Ambalangoda", "Tangalle"],
   Hambantota: ["Hambantota", "Tangalle"],
@@ -24,6 +24,6 @@ export const locations = {
   Mannar: ["Mannar"],
   Mullaitivu: ["Mullaitivu"],
   Vavuniya: ["Vavuniya"],
-  Monaragala: ["Moneragala"]
+  Monaragala: ["Monaragala"]
 };
 
