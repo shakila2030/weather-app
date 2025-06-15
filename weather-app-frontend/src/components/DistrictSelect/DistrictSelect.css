@@ -1,0 +1,57 @@
+.district-select-container {
+  margin-bottom: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 400px;
+}
+
+.district-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+.district-dropdown {
+  font-size: 14px;
+}
+
+/* Shared React Select styling */
+.react-select__control {
+  border-radius: 8px;
+  border-color: #ccc;
+  box-shadow: none;
+  transition: border-color 0.3s ease;
+}
+
+.react-select__control--is-focused {
+  border-color: #28a745;
+  box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.25);
+}
+
+.react-select__placeholder {
+  color: #888;
+}
+
+.react-select__single-value {
+  color: #333;
+}
+
+.react-select__menu {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.react-select__option {
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.react-select__option--is-focused {
+  background-color: #e6ffe6;
+}
+
+.react-select__option--is-selected {
+  background-color: #28a745;
+  color: white;
+}

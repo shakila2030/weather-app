@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+/* src/App.css */
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('/public/house.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}

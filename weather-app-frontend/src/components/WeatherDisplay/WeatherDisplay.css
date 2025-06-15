@@ -1,0 +1,27 @@
+.weather-display-container {
+  margin-top: 24px;
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.weather-heading {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #007bff;
+}
+
+.weather-data p {
+  font-size: 16px;
+  margin: 8px 0;
+  color: #333;
+}
+
+.weather-data .label {
+  font-weight: 600;
+  color: #555;
+}
