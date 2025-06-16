@@ -1,6 +1,6 @@
 export const locations = {
   Colombo: ["Colombo", "Dehiwala‑Mount Lavinia", "Moratuwa", "Sri Jayawardenepura Kotte", "Kaduwela", "Kesbewa", "Kolonnawa", "Avissawella"],
-  Gampaha: ["Gampaha", "Negombo", "Wattala", "Ja‑Ela", "Katunayake"],
+  Gampaha: ["Gampaha", "Negombo", "Wattala", "Ja‑Ela", "Katunayaka"],
   Kalutara: ["Kalutara", "Horana", "Panadura", "Wadduwa"],
   Kandy: ["Kandy", "Peradeniya", "Gampola", "Katugastota", "Matale", "Dambulla", "Nuwara Eliya"],
   Matale: ["Matale", "Dambulla", "Nuwara Eliya"],

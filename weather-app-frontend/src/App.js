@@ -28,22 +28,24 @@ function App() {
     setWeather(null);
   };
 
-  const handleCheckWeather = async () => {
-    if (!city) {
-      setError("Please select a city.");
-      return;
-    }
+ const handleCheckWeather = async () => {
+  if (!city) {
+    setError("Please select a city.");
+    return;
+  }
 
-    try {
-      setError("");
-      const data = await getWeatherForCity(city.value);
-      setWeather(data);
-    } catch (e) {
-      setError("Failed to fetch weather. Please try again.");
-     } finally {
-      setLoading(false);  
-    }
-  };
+  try {
+    setError("");
+    setLoading(true);
+    const data = await getWeatherForCity(city.value);
+    setWeather(data);
+  } catch (e) {
+    setError("Failed to fetch weather. Please try again.");
+  } finally {
+    setLoading(false); 
+  }
+};
+
 
   return (
   <div className="app-container">
