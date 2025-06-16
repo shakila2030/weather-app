@@ -57,3 +57,12 @@
   background-color: #28a745;
   color: white;
 }
+
+
+@media (max-width: 600px) {
+ 
+.district-select-container {
+   width: 390px;
+}
+
+}

@@ -23,3 +23,11 @@
   background-color: #ccc;
   cursor: not-allowed;
 }
+
+@media (max-width: 600px) {
+ 
+.check-weather-button {
+   width: 390px;
+}
+
+}
