@@ -33,6 +33,10 @@ public class WeatherService {
             response.setHumidity(obj.getInt("humidity"));
             response.setWindSpeed(obj.getDouble("wind_kph"));
             response.setUvIndex(obj.getDouble("uv"));
+            response.setCondition(obj.getJSONObject("condition").getString("text"));
+            response.setCloud(obj.getInt("cloud"));
+            response.setVisibility(obj.getDouble("vis_km"));
+            response.setPressure(obj.getInt("pressure_mb"));
 
             return response;
         } catch (Exception e) {

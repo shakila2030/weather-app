@@ -1,15 +1,20 @@
 .city-select-container {
   margin-bottom: 16px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  max-width: 400px;
+  width: 400px;
+  /* display: flex; */
+  /* justify-content: center; */
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 .city-label {
   display: block;
   margin-bottom: 6px;
   font-size: 16px;
   font-weight: 600;
-  color: white;
+  color: black;
 }
 
 .city-dropdown {

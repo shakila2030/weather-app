@@ -14,6 +14,7 @@ function App() {
   const [cities, setCities] = useState([]);
   const [weather, setWeather] = useState(null);
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleDistrictChange = selected => {
     setDistrict(selected);
@@ -39,34 +40,49 @@ function App() {
       setWeather(data);
     } catch (e) {
       setError("Failed to fetch weather. Please try again.");
+     } finally {
+      setLoading(false);  
     }
   };
 
   return (
-    <div style={{ padding: 20, fontFamily: "Arial" }}>
-      <h1 style={{ color: "white" }}>Simple Weather Reporter</h1>
+  <div className="app-container">
+    <div className="card">
+      <div style={{ padding: 20, fontFamily: "Arial", textAlign: "center" }}>
+        <h1 style={{ color: "black" }}>Simple Weather Reporter</h1>
 
+        <DistrictSelect
+          district={district}
+          onChange={handleDistrictChange}
+          locations={locations}
+        />
 
-      <DistrictSelect
-        district={district}
-        onChange={handleDistrictChange}
-        locations={locations}
-      />
+        <CitySelect
+          district={district}
+          city={city}
+          cities={cities}
+          onChange={handleCityChange}
+        />
 
-      <CitySelect
-        district={district}
-        city={city}
-        cities={cities}
-        onChange={handleCityChange}
-      />
+        <CheckWeatherButton city={city} onClick={handleCheckWeather} />
 
-      <CheckWeatherButton city={city} onClick={handleCheckWeather} />
+        {error && <p style={{ color: "red" }}>{error}</p>}
 
-      {error && <p style={{ color: "red" }}>{error}</p>}
-
-      {weather && <WeatherDisplay city={city.label} weather={weather} />}
+        {loading ? (
+          <div className="loader"></div>
+        ) : (
+          weather && (
+            <div style={{ marginTop: "20px" }}>
+              <WeatherDisplay city={city.label} weather={weather} />
+            </div>
+          )
+        )}
+      </div>
     </div>
-  );
+  </div>
+);
+
+
 }
 
 export default App;

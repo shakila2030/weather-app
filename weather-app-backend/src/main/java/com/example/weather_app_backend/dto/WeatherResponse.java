@@ -8,4 +8,8 @@ public class WeatherResponse {
     private int humidity;
     private double windSpeed;
     private double uvIndex;
+    private String condition;
+    private int cloud;
+    private double visibility;
+    private int pressure;
 }

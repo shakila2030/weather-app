@@ -6,7 +6,7 @@ function CitySelect({ district, city, cities, onChange }) {
 
   return (
     <div className="city-select-container">
-      <label className="city-label">Select City:</label>
+      <label className="city-label"> City :</label>
       <Select
         className="city-dropdown"
         classNamePrefix="react-select"

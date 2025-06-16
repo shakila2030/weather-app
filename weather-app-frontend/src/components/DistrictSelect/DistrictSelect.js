@@ -9,7 +9,7 @@ function DistrictSelect({ district, onChange, locations }) {
 
   return (
     <div className="district-select-container">
-      <label className="district-label">Select District:</label>
+      <label className="district-label"> District :</label>
       <Select
         className="district-dropdown"
         classNamePrefix="react-select"
