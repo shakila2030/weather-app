@@ -18,7 +18,7 @@ public class WeatherService {
 
     public WeatherResponse getWeatherForCity(String city) {
         try {
-            String url = UriComponentsBuilder.fromHttpUrl(apiUrl)
+            String url = UriComponentsBuilder.fromUriString(apiUrl)
                     .queryParam("key", apiKey)
                     .queryParam("q", city)
                     .toUriString();
